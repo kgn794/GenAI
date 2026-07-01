@@ -1,16 +1,9 @@
-import nltk
-nltk.download('brown')
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('conll2000')
-nltk.download('movie_reviews')
-
-import sys
-!{sys.executable} -m textblob.download_corpora
-from textblob import TextBlob
-from textblob import Word
 import streamlit as st
+import pandas as pd
+from textblob import TextBlob
+from collections import Counter
+import re
+from textblob import Word
 
 
 st.subheader("Sentiment Analysis")
