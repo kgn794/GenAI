@@ -7,7 +7,7 @@ from textblob import Word
 import ssl
 import nltk
 
-ssl._create_default_https_context = ssl._create_unverified_context
+nltk.set_proxy('http://proxy.company.com:8080')
 
 nltk.download('brown')
 nltk.download('punkt')
