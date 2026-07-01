@@ -5,8 +5,7 @@ import time
 
 
 st.title("Title - title")
-st.divider()
-st.empty()
+st.markdown("---")
 st.header("Header - header")
 st.subheader("Sub Header - subheader")
 st.text("Plain text")
