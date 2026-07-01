@@ -1,12 +1,13 @@
-from textblob import TextBlob
-from textblob import Word
-import streamlit as st
 import nltk
-
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 nltk.download('brown')
+
+from textblob import TextBlob
+from textblob import Word
+import streamlit as st
+
 
 st.subheader("Sentiment Analysis")
 str = "Python is amazing!"
