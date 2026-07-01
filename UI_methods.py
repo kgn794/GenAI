@@ -169,7 +169,7 @@ with container:
     st.write("Inside Container")
 st.markdown("---")
 
-st.write("Placeholder")
+st.write("Placeholder - empty")
 placeholder = st.empty()
 placeholder.write("Loading...")
 placeholder.write("Completed")
@@ -199,7 +199,7 @@ if st.button("Increment"):
 st.write(st.session_state.count)
 st.markdown("---")
 
-st.write("Balloons - snow")
+st.write("Balloons - balloons")
 st.balloons()
 st.markdown("---")
 
