@@ -13,11 +13,9 @@ blob = TextBlob(str)
 st.write(blob.sentiment)
 st.markdown("---")
 
-st.subheader("Words and Sentences")
-str = "Python is amazing!"
+st.subheader("Tags")
+str = "I love Python"
 st.write(str)
 blob = TextBlob(str)
-st.write(blob.words)
-st.write(blob.sentences)
+print(blob.tags)
 st.markdown("---")
-
