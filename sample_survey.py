@@ -65,20 +65,3 @@ if submit:
 
     st.write("Top Keywords")
     st.write(response["Keywords"])
-
-if len(st.session_state.responses) > 0:
-
-    st.header("Survey Results")
-
-    df = pd.DataFrame(st.session_state.responses)
-
-    st.dataframe(df)
-
-    csv = df.to_csv(index=False)
-
-    st.download_button(
-        "Download CSV",
-        csv,
-        "survey_results.csv",
-        "text/csv"
-    )
