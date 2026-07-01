@@ -1,7 +1,9 @@
-!python -m textblob.download_corpora
+
 from textblob import TextBlob
 from textblob import Word
 import streamlit as st
+
+python -m textblob.download_corpora
 
 st.subheader("Sentiment Analysis")
 str = "Python is amazing!"
